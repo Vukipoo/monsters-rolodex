@@ -1,10 +1,11 @@
 import React from 'react'
+import { Component } from 'react'
 
-export default function CardList(props) {
+Class CardList extends Component(props) {
     console.log(props)
 
     const { monsters } = this.props
-
+    render () {
     return ( 
         <div>
             {monsters.map(monster => (
@@ -13,4 +14,7 @@ export default function CardList(props) {
 
             ))}</div>
     )
+            }
 }
+
+export default CardList

@@ -4,10 +4,19 @@ function SearchBox(props) {
   return (
 
     <input
-    calssName = {this.props.className}
+    calssName = {ClassName}
     type ='search'
-    placeholder={this.props.placeholder}
-    onChange={this.props.onChangeHandler}
+    placeholder={thisplaceholder}
+    onChange={onChangeHandler}
+    const searchField = event.target.value.toLocaleLowerCase();
+    const filteredMonsters = monsters.filter((monster) => {
+      return monster.name.toLocaleLowerCase().includes(searchField)
+    })
+
+    setMonsters(() => {
+      return { searchField }
+    })
+
     />
 
     )
