@@ -1,25 +1,13 @@
 import React from 'react'
 
-function SearchBox(props) {
-  return (
-
+const SearchBox = ({ className, placeholder, onChangeHandler }) => (
     <input
-    calssName = {ClassName}
+    className ={`search-box ${className}`}
     type ='search'
-    placeholder={thisplaceholder}
+    placeholder={placeholder}
     onChange={onChangeHandler}
-    const searchField = event.target.value.toLocaleLowerCase();
-    const filteredMonsters = monsters.filter((monster) => {
-      return monster.name.toLocaleLowerCase().includes(searchField)
-    })
-
-    setMonsters(() => {
-      return { searchField }
-    })
-
     />
+  )
 
-    )
-}
 
 export default SearchBox
